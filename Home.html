@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Verification System</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center p-4">
+        <h1>SMS Verification System</h1>
+    </header>
+    <section id="verif" class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="client">
+                    <h2>Select Client</h2>
+                    <input type="text" class="form-control" id="client">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="contact">
+                    <h2>Select Contact</h2>
+                    <input type="text" class="form-control" id="contact">
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <button type="submit" class="btn btn-primary btn-block">Send Verification</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="table" class="container mt-4">
+        <div id="table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Contact</th>
+                        <th>Verification Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table content here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="customer">
+                    <h2>Add new customer</h2>
+                    <input type="text" class="form-control" id="customer">
+                    <button type="submit" class="btn btn-success mt-3">Add</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="contact" class="mt-4">
+                    <h2>Add new contact</h2>
+                    <input type="text" class="form-control mt-3" id="customer">
+                    <input type="text" class="form-control mt-3" id="cn">
+                    <input type="text" class="form-control mt-3" id="cp">
+                    <button type="submit" class="btn btn-success mt-3">Add</button>
+                </div>
+            </div>            
+            <div class="col-md-4">
+                <div id="edit" class="mt-4">
+                    <h2>Edit contact</h2>
+                    <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CustomerID Dropdown
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Type 1</a>
+                            <a class="dropdown-item" href="#">Type 2</a>
+                            <a class="dropdown-item" href="#">Type 3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact Name Dropdown
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Type 1</a>
+                            <a class="dropdown-item" href="#">Type 2</a>
+                            <a class="dropdown-item" href="#">Type 3</a>
+                        </div>
+                    </div>
+                    <div class="cp mt-3">
+                        <input type="text" class="form-control" id="cp">
+                    </div>
+                    <button type="submit" class="btn btn-warning mt-3">Change</button>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

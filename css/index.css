@@ -1,0 +1,88 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#verif {
+    padding: 20px;
+    text-align: center;
+}
+
+#client input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#table {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#customer input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    #verif {
+        padding: 10px;
+    }
+    #table {
+        padding: 10px;
+    }
+    table,
+    td,
+    th {
+        padding: 5px;
+    }
+    #customer input[type="text"] {
+        padding: 8px;
+    }
+    button[type="submit"] {
+        padding: 10px 15px;
+    }
+}
